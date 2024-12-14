@@ -21,6 +21,16 @@ public class MovieRepository:IMovieRepository
         return Task.FromResult<Movie?>(_movies[index]);
     }
 
+    public Task<Movie?> GetBySlugAsync(string slug)
+    {
+        var index =_movies.FindIndex(m=>m.Slug == slug);
+        if (index == -1)
+        {
+            return Task.FromResult<Movie?>(null);
+        }
+        return Task.FromResult<Movie?>(_movies[index]);
+    }
+
     public Task<IEnumerable<Movie>> GetAllAsync()
     {
         return Task.FromResult(_movies.AsEnumerable());
