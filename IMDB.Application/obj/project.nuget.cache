@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nzjSpc0Q5Ws=",
+  "dgSpecHash": "7SDxPnxSeF8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Abanoub Saweris\\RiderProjects\\IMDB\\IMDB.Application\\IMDB.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
