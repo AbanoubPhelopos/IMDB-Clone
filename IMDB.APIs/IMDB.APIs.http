@@ -1,0 +1,6 @@
+@IMDB.APIs_HostAddress = http://localhost:5227
+
+GET {{IMDB.APIs_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
