@@ -1,6 +1,7 @@
 using System.Diagnostics.Contracts;
 using IMDB.Application.Models;
 using IMDB.Contracts.Requests;
+using IMDB.Contracts.Responses;
 
 namespace IMDB.APIs.Mapping;
 
@@ -14,6 +15,25 @@ public static class ContractMapping
             Title = request.Title,
             YearOfRelease = request.YearOfRelease,
             Genres = request.Genres.ToList()
+        };
+    }
+
+    public static MovieResponse MapToResponse(this Movie movie)
+    {
+        return new MovieResponse
+        {
+            Id = movie.Id,
+            Genres = movie.Genres,
+            Title = movie.Title,
+            YearOfRelease = movie.YearOfRelease,
+        };
+    }
+
+    public static MoviesResponse MapToResponse(this IEnumerable<Movie> movies)
+    {
+        return new MoviesResponse
+        {
+            Movies = movies.Select(MapToResponse)
         };
     }
 }
