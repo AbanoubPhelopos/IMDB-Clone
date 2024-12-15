@@ -6,41 +6,41 @@ namespace IMDB.Application.Services;
 
 public class MovieService(IMovieRepository movieRepository, IValidator<Movie> movieValidator) : IMovieService
 {
-    public async Task<bool> CreateAsync(Movie movie)
+    public async Task<bool> CreateAsync(Movie movie,CancellationToken token)
     {
-        await movieValidator.ValidateAndThrowAsync(movie);
-        return await movieRepository.CreateAsync(movie);
+        await movieValidator.ValidateAndThrowAsync(movie,token);
+        return await movieRepository.CreateAsync(movie, token);
     }
 
-    public Task<Movie?> GetByIdAsync(Guid id)
+    public Task<Movie?> GetByIdAsync(Guid id,CancellationToken token)
     {
-        return movieRepository.GetByIdAsync(id);
+        return movieRepository.GetByIdAsync(id,token);
     }
 
-    public Task<Movie?> GetBySlugAsync(string slug)
+    public Task<Movie?> GetBySlugAsync(string slug,CancellationToken token)
     {
-        return movieRepository.GetBySlugAsync(slug);
+        return movieRepository.GetBySlugAsync(slug,token);
     }
 
-    public Task<IEnumerable<Movie>> GetAllAsync()
+    public Task<IEnumerable<Movie>> GetAllAsync(CancellationToken token)
     {
-        return movieRepository.GetAllAsync();
+        return movieRepository.GetAllAsync(token);
     }
 
-    public async Task<Movie?> UpdateAsync(Movie movie)
+    public async Task<Movie?> UpdateAsync(Movie movie,CancellationToken token)
     {
-        await movieValidator.ValidateAndThrowAsync(movie);
-        var movieExist = await movieRepository.ExistsByIdAsync(movie.Id);
+        await movieValidator.ValidateAndThrowAsync(movie,token);
+        var movieExist = await movieRepository.ExistsByIdAsync(movie.Id, token);
         if (!movieExist)
         {
             return null;
         }
-        await movieRepository.UpdateAsync(movie);
+        await movieRepository.UpdateAsync(movie, token);
         return movie;
     }
 
-    public Task<bool> DeleteAsync(Guid id)
+    public Task<bool> DeleteAsync(Guid id,CancellationToken token)
     {
-        return movieRepository.DeleteAsync(id);
+        return movieRepository.DeleteAsync(id,token);
     }
 }

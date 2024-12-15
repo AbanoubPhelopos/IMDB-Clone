@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IMDB.APIs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7ec896eb51f09cb5e67ebc19783ec7464258ec5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aef939ac8674f0f4c5380caa8664db890fd19fe4")]
 [assembly: System.Reflection.AssemblyProductAttribute("IMDB.APIs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IMDB.APIs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

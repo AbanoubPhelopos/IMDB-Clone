@@ -28,9 +28,9 @@ public class MovieValidator : AbstractValidator<Movie>,IApplicationMarker
             .WithMessage("This movie already in the system");
     }
 
-    private async Task<bool> ValidateSlug(Movie movie,string slug,CancellationToken cancellationToken=default)
+    private async Task<bool> ValidateSlug(Movie movie,string slug,CancellationToken token=default)
     {
-        var existingMovie = await _movieRepository.GetBySlugAsync(slug);
+        var existingMovie = await _movieRepository.GetBySlugAsync(slug, token);
         if (existingMovie is not null)
         {
             return existingMovie.Id == movie.Id;
