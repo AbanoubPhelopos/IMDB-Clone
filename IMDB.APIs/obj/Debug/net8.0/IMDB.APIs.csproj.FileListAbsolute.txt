@@ -36,3 +36,6 @@ C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\obj\Debug\net8.0\refint\IM
 C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\obj\Debug\net8.0\IMDB.APIs.pdb
 C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\obj\Debug\net8.0\IMDB.APIs.genruntimeconfig.cache
 C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\obj\Debug\net8.0\ref\IMDB.APIs.dll
+C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\bin\Debug\net8.0\Dapper.dll
+C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Abanoub Saweris\RiderProjects\IMDB\IMDB.APIs\bin\Debug\net8.0\Npgsql.dll

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7SDxPnxSeF8=",
+  "dgSpecHash": "XEiqxD9xVjI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Abanoub Saweris\\RiderProjects\\IMDB\\IMDB.Application\\IMDB.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512"
   ],
   "logs": []
 }
