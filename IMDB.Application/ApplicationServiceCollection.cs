@@ -1,3 +1,4 @@
+using FluentValidation;
 using IMDB.Application.Database;
 using IMDB.Application.Repositories;
 using IMDB.Application.Services;
@@ -11,6 +12,7 @@ public static class ApplicationServiceCollection
     {
         services.AddSingleton<IMovieRepository, MovieRepository>();
         services.AddSingleton<IMovieService, MovieService>();
+        services.AddValidatorsFromAssemblyContaining<IApplicationMarker>(ServiceLifetime.Singleton);
         return services;
     }
     public static IServiceCollection AddDatabse(this IServiceCollection services , string connectionString)

@@ -1,14 +1,15 @@
+using FluentValidation;
 using IMDB.Application.Models;
 using IMDB.Application.Repositories;
 
 namespace IMDB.Application.Services;
 
-public class MovieService(IMovieRepository movieRepository) : IMovieService
+public class MovieService(IMovieRepository movieRepository, IValidator<Movie> movieValidator) : IMovieService
 {
-
-    public Task<bool> CreateAsync(Movie movie)
+    public async Task<bool> CreateAsync(Movie movie)
     {
-        return movieRepository.CreateAsync(movie);
+        await movieValidator.ValidateAndThrowAsync(movie);
+        return await movieRepository.CreateAsync(movie);
     }
 
     public Task<Movie?> GetByIdAsync(Guid id)
@@ -28,6 +29,7 @@ public class MovieService(IMovieRepository movieRepository) : IMovieService
 
     public async Task<Movie?> UpdateAsync(Movie movie)
     {
+        await movieValidator.ValidateAndThrowAsync(movie);
         var movieExist = await movieRepository.ExistsByIdAsync(movie.Id);
         if (!movieExist)
         {

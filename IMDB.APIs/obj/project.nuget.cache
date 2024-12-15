@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lmJu8XmNKfc=",
+  "dgSpecHash": "FDqC8gMcnpA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Abanoub Saweris\\RiderProjects\\IMDB\\IMDB.APIs\\IMDB.APIs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\Abanoub Saweris\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",

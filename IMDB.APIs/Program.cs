@@ -1,3 +1,4 @@
+using IMDB.APIs.Mapping;
 using IMDB.Application;
 using IMDB.Application.Database;
 
@@ -28,6 +29,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseMiddleware<ValidationMappingMiddleware>();
 app.MapControllers();
 
 var dbInitializer = app.Services.GetRequiredService<DbInitializer>();
